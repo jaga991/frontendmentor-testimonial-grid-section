@@ -27,6 +27,7 @@ body{
 .wrapper{
   border: 1px solid black;
   width: 75%;
+  min-width: 700px;
   min-height: 500px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -38,3 +39,32 @@ body{
   margin-top: 5%;
 }
 
+/*grid area management*/
+#card-daniel-clifford{
+  grid-area: card-long-1;
+}
+#card-jonathan-walters{
+  grid-area: card-min-1;
+}
+#card-kira-whittle{
+  grid-area: card-tall-1;
+}
+#card-jeanette-harmon{
+  grid-area: card-min-2;
+}
+#card-patrick-abrams{
+  grid-area: card-long-2;
+}
+/*card-type-management*/
+.card-long{
+  background-color: black;
+  min-width: 20%;
+}
+.card-min{
+  background-color: blue;
+  min-width: 10%;
+}
+.card-tall{
+  background-color: burlywood;
+  min-width: 10%;
+}
