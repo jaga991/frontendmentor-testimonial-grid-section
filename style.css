@@ -1,0 +1,40 @@
+* *::before *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  --color-primary-moderate-violet: hsl(263, 55%, 52%);
+  --color-primary-vd-grayish-blue: hsl(217, 19%, 35%);
+  --color-primary-vd-blackish-blue: hsl(219, 29%, 14%);
+  --color-primary-white: hsl(0, 0%, 100%);
+
+  --color-neutral-light-gray: hsl(0, 0%, 81%);
+  --color-neutral-light-grayish-blue: hsl(210, 46%, 95%);
+  
+  --font-primary: 'Barlow Semi Condensed', sans-serif;
+
+  background-color: var(--color-neutral-light-grayish-blue);
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper{
+  border: 1px solid black;
+  width: 75%;
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+  "card-long-1 card-long-1 card-min-1 card-tall-1"
+  "card-min-2 card-long-2 card-long-2 card-tall-1";
+  gap: 25px 25px;
+  margin-top: 5%;
+}
+
